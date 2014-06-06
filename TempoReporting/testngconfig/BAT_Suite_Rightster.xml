@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name = "BAT_SUITE_PayPal" verbose = "1" >
+	<listeners>
+	    <listener class-name="com.paypal.common.TestValidationErrorListener" />
+	    <listener class-name="org.testng.reporters.XMLReporter" />
+	</listeners>
+	
+	<groups>
+		<run>
+			<include name="@groupname"/>
+		</run>
+	</groups>
+		
+	<test name = "PayPal_Tests" >
+		<classes>
+			<class name = "com.paypal.bat.tests.PayPal_Tests" />
+		</classes>
+	</test>
+		  
+</suite>
