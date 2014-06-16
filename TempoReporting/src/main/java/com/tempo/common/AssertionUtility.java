@@ -10,8 +10,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 
-import com.tempo.apputility.AmortizationCalculator;
-
 public class AssertionUtility extends SeleniumObject {
 	
 	
@@ -195,19 +193,5 @@ public class AssertionUtility extends SeleniumObject {
     	assertTrue(compRes, FailStmt);
     }
     
-    public static void CompareTables(Map<Integer, AmortizationCalculator.Row> expected, Map<Integer, AmortizationCalculator.Row> actual)
-    {
-    	boolean compRes = false;
-    	String FailStmt = "Actual table doesn't contain expected values";
-    	if(expected.size() == actual.size() && actual.equals(expected))
-    	{
-    		compRes = true;
-    		assertTrue(compRes,FailStmt);
-    	}
-    	else
-    	{
-    		assertTrue(compRes,FailStmt);
-    	}
-    }
-      
+          
 }
