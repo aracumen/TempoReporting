@@ -15,7 +15,6 @@ import com.tempo.uiobjects.CoreTempoLoginPage;
 
 
 
-
 public class LoginPageTest {
 
 	public WebDriver driver;
